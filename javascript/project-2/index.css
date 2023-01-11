@@ -1,0 +1,330 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+nav{
+    border: 2px solid transparent;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eceff1;
+    /* position:fixed; */
+    width: 100%;
+   
+}
+span{
+    color: rgb(221, 68, 7);
+    font-family: sans-serif;
+}
+nav>div:nth-child(1){
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+nav>div:nth-child(2){
+    
+}
+nav>div:nth-child(2) ul{
+    display: flex;
+}
+nav>div:nth-child(2) ul li{
+   list-style: none;
+   margin: 0px 20px;
+   font-size: 18px;
+   font-family: sans-serif;
+   font-weight: 400;
+}
+nav>div:nth-child(2) ul>li:nth-child(1){
+    color: rgb(221, 68, 7);
+    border-bottom: 2px solid rgb(187, 185, 185);
+ }
+ nav>div:nth-child(2) ul>li~li{
+    color: gray;
+ }
+ nav>div:nth-child(2) ul li:hover{
+   cursor: pointer;
+   border-bottom: 2px solid rgb(187,185,185);
+   color: black;
+   border-bottom: 2px solid red;
+ }
+
+nav>div:nth-child(3)> span{
+   padding: 0px 10px;
+   color: gray;
+}
+#mobile{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 500px;
+    border: 2px solid transparent;
+    display: flex;
+    margin-top: 5   0px;
+}
+header>div{
+    width: 50%;
+}
+header>div:nth-child(1){
+    border: 2px solid transparent;
+    background-color: #F0F8FF;
+}
+header>div:nth-child(2){
+    border: 2px solid transparent;
+}
+header>div:nth-child(1) div{
+    border: 2px solid transparent;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    font-size: 35px;
+    font-family: sans-serif;
+    margin-top: 15%;
+   
+}
+img{
+    object-fit: cover;
+}
+
+section{
+    width: 100%;
+    height: 800px;
+    border: 2px solid transparent;
+    display: flex;
+}
+section>div{
+    width: 50%;
+}
+section>div:nth-child(1){
+    border: 2px solid transparent;
+}
+section>div:nth-child(1)>div{
+    border: 2px solid transparent;
+    width: 65%;
+    height: 70%;
+    margin: auto;
+    margin-top: 13%;
+    margin-left: 22%;
+}
+section>div:nth-child(1)>div h1{
+    font-size:40px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+section>div:nth-child(1)>div input{
+    width: 100%;
+    height:50px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+section>div:nth-child(1)>div input::placeholder{
+   font-size: 18px;
+   font-weight: 100;
+   border-radius: 6px;
+}
+section>div:nth-child(1)>div textarea{
+    width: 100%;
+    height:100px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+button{
+    padding: 18px 80px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+.inner_divs{
+    width: 70%;
+    margin-top: 18%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 200px 200px;
+    
+}
+.inner_divs >div h2{
+    margin: 30px 30px;
+}
+.inner_divs >div p{
+    margin: 0px 30px;
+    font-size: 20px;
+}
+
+.inner_divs>div{
+    border: 2px solid transparent;
+}
+.inner_divs>div:nth-child(1){
+   border-right: 1px solid gray;
+   border-bottom: 1px solid gray;
+}
+.inner_divs>div:nth-child(2){
+   
+    border-bottom: 1px solid gray;
+}
+.inner_divs>div:nth-child(3){
+    border-right: 1px solid gray;
+}
+
+
+
+@media only screen and (min-width:420px) and (max-width:420px){
+    nav{
+        display: none;
+    }
+    #mobile{
+        display: block;
+        padding: 10px;
+        background-color: #eceff1;
+    }
+    #mobile>div:nth-child(1){
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+    .active{
+        display: none;
+    }
+    #nav_links ul li{
+        background-color: #eceff1;
+        list-style: none;
+        margin: 15px 20px;
+        font-size: 20px;
+
+    }
+    #nav_links ul>li:nth-child(1){
+        color: rgb(221, 68, 7);
+        border-bottom: 2px solid gray;
+        width: 50px;
+    }
+    #nav_links ul>li~li{
+        color: gray;
+        font-weight: 100;
+    }
+    #nav_links ul>li:hover{
+        color: gray;
+        font-weight: 100;
+        border-bottom: 2px solid gray;
+        width: 50px;
+        cursor: pointer;
+        color: black;
+    }
+    span{
+        color: gray;
+    }
+    #mobile >div>div:nth-child(2) span{
+        color: rgb(221, 68, 7);
+    }
+    header{
+        width: 100%;
+        height: auto;
+        border: 2px solid transparent;
+        display: flex;
+        flex-direction: column;
+    }
+    header>div{
+        width: 100%;
+    }
+    header>div:nth-child(1) div{
+        border: 2px solid transparent;
+        width: 90%;
+        height:250px;
+        margin: auto;
+        font-size: 23px;
+        font-family: sans-serif;
+        margin-top: 17%;
+       
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    section>div{
+        width: 100%;
+    }
+    .inner_divs{
+        width: 95%;
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 200px 200px 200px 200px;
+        border: 2px solid transparent;
+        margin: auto;
+        
+    }
+    section>div:nth-child(2){
+        border: 2px solid transparent;
+        width: 100%;
+    }
+    section>div:nth-child(1)>div{
+        width: 90%;
+        margin-left: 10px;
+    }
+    .inner_divs>div:nth-child(3){
+        border-bottom: 1px solid gray;
+    }
+
+}
+@media only screen and (min-width:450px) and (max-width:920px){
+    nav{
+        display: none;
+    }
+    #mobile{
+        display: block;
+        padding: 10px;
+        background-color: #eceff1;
+    }
+    #mobile>div:nth-child(1){
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+    .active{
+        display: none;
+    }
+    #nav_links ul li{
+        background-color: #eceff1;
+        list-style: none;
+        margin: 15px 20px;
+        font-size: 20px;
+
+    }
+    #nav_links ul>li:nth-child(1){
+        color: rgb(221, 68, 7);
+        border-bottom: 2px solid gray;
+        width: 50px;
+    }
+    #nav_links ul>li~li{
+        color: gray;
+        font-weight: 100;
+    }
+    #nav_links ul>li:hover{
+        color: gray;
+        font-weight: 100;
+        border-bottom: 2px solid gray;
+        width: 50px;
+        cursor: pointer;
+        color: black;
+    }
+    span{
+        color: gray;
+    }
+    #mobile >div>div:nth-child(2) span{
+        color: rgb(221, 68, 7);
+    }
+    
+    section {
+       border: 2px solid red;
+       width: 100%;
+    }
+    section >div{
+        width: 50%;
+    }
+}
