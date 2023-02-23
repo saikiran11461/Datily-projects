@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div id="container"></div>
+        <button onclick="getapi()">get api</button>
+</body>
+</html>
+<script>
+    let url = "https://reqres.in/api/users?page=1";
+
+   async function fetchData (){
+        try{
+             let res = await fetch(url);
+             let data = await res.json();
+             let api = data.data
+             console.log(api)
+             getData(api)
+        }
+        catch(err){
+            console.log("error here",err)
+        }
+    }
+
+   
+
+    function getData(arr){
+       arr.map(function(data){
+        let cont = document.getElementById("container")
+         let div = document.createElement("div")
+         let img = document.createElement("img");
+         let h1 = document.createElement("h1");
+         let h2 = document.createElement("h2");
+
+         img.src = data.avatar;
+         h1.innerText = data.id;
+         h2.innerText = data.email;
+         div.append(img,h1,h2)
+         cont.append(div)
+       })
+    }
+
+    function getapi(){
+        fetchData()
+    }
+</script>

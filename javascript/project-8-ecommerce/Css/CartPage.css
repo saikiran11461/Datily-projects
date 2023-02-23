@@ -1,0 +1,31 @@
+#container img{
+    width: 400px;
+    height: 400px;
+}
+
+#container{
+    border: 2px solid transparent;
+    width: 80%;
+    margin: auto;
+   
+    
+}
+#container #inner-div{
+    display: flex;
+}
+#inner-div{
+    margin-bottom: 30px;
+    border-bottom: 3px solid #80cbc4;
+}
+#inner-div p{
+    font-size: 25px;
+    line-height: 100px;
+}
+#inner-div button{
+    padding: 12px 30px ;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 0px 5px;
+}

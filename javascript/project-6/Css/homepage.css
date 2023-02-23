@@ -1,0 +1,30 @@
+nav{
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-color: black;
+
+}
+nav>div{
+    font-size: 18px;
+    font-family: cursive;
+    color: blue;
+    font-weight: 700;
+
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

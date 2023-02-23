@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Table names </h1>
+    <div id="container">
+        
+        <div class="left">
+            <form >
+                <label  for="">Enter name</label><br>
+                <input id="name" type="text" placeholder="enter name"> <br>
+                <label for="">Enter email</label><br>
+                <input id="email" type="text" placeholder="enter email"> <br>
+                <select  id="proarity">
+                    <option value="">choose something</option>
+                    <option value="high">high</option>
+                    <option value="low">low</option>
+                    <option value="medium">medium</option>
+                </select>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="right">
+            <table>
+                <thead>
+                 <tr>
+                     <td>full name</td>
+                     <td>email</td>
+                     <td>proarity</td>
+                     <td>Delete</td>
+                 </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+             </table>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    let dataArr = JSON.parse(localStorage.getItem("tableData")) || [];
+    document.querySelector("form").addEventListener("submit", formsubmit);
+    appenData(dataArr);
+    function formsubmit(event) {
+        event.preventDefault();
+        let obj = {
+         name : document.getElementById("name").value,
+         email : document.getElementById("email").value,
+         proarity : document.getElementById("proarity").value
+        }
+        dataArr.push(obj)
+         localStorage.setItem("tabledata", JSON.stringify(dataArr))
+        appenData(dataArr)
+    }
+
+    function appenData(data){
+        document.querySelector("tbody").innerHTML=""
+        data.map(function(elem){
+            
+            let tr = document.createElement("tr");
+
+            let td1 = document.createElement("td");
+            td1.innerText=elem.name
+
+            let td2 = document.createElement("td")
+            td2.innerText=elem.email
+
+            let td3 = document.createElement("td")
+            td3.innerText=elem.proarity
+
+
+            if(elem.proarity == "high"){
+                td3.style.backgroundColor="red"
+            }
+            else if(elem.proarity == "low"){
+                td3.style.backgroundColor="green"
+            }
+            else{
+                td3.style.backgroundColor="blue"
+            }
+
+            let td4  = document.createElement("td");
+            td4.innerText = "Delete"
+
+            td4.addEventListener("click", deleterow)
+
+            tr.append(td1,td2,td3,td4)
+            document.querySelector("tbody").append(tr)
+        })
+       
+    }
+
+    function deleterow(){
+        let del  = event.target.parentNode
+        del.remove()
+    }
+</script>

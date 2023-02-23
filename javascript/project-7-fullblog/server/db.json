@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "username": "master",
+      "email": "eve.holt@reqres.in",
+      "password": "1234567",
+      "avatar": "https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png",
+      "id": 1
+    },
+    {
+      "username": "girish",
+      "email": "girish@gmail.com",
+      "password": "12345",
+      "avatar": "https://images.pexels.com/photos/3585092/pexels-photo-3585092.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 2
+    },
+    {
+      "username": "rockey raju",
+      "email": "raju@gmail.com",
+      "password": "raju@123",
+      "avatar": "https://images.pexels.com/photos/3585093/pexels-photo-3585093.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 3
+    },
+    {
+      "username": "nithin",
+      "email": "nithin@gmail.com",
+      "password": "nithin@123",
+      "avatar": "https://images.pexels.com/photos/3585089/pexels-photo-3585089.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 4
+    },
+    {
+      "username": "mahesh",
+      "email": "mahesh@gmail.com",
+      "password": "mahesh@123",
+      "avatar": "https://images.pexels.com/photos/7230244/pexels-photo-7230244.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 5
+    },
+    {
+      "username": "ananth",
+      "email": "ananth@gmail.com",
+      "password": "ananth@123",
+      "avatar": "https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 6
+    }
+  ],
+
+  "posts":[
+    {
+      "userid":1,
+      "title":"first post"
+    },
+    {
+      "userid":1,
+      "title":"second post"
+    },
+    {
+      "userid":2,
+      "title":"first post"
+    },
+
+    {
+      "userid":5,
+      "title":"master "
+    }
+  ]
+}

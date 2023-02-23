@@ -1,0 +1,11 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(25%, 1fr);
+}
+
+#container #innerdiv img{
+    width: 100px;
+}
+#container #innerdiv{
+   border: 2px solid blue;
+}

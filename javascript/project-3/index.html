@@ -1,89 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body{
-            background-color: #212121;
+      body {
+        background-color: #212121;
+      }
+      #container {
+        border: 2px solid transparent;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        margin-top: 7%;
+      }
+      #container > div {
+        flex: 1;
+        width: 20%;
+        height: 500px;
+        border: 2px solid transparent;
+        transition: 0.5s;
+        border: none;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      }
+      #container > div:hover {
+        flex: 2;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      #main {
+        background-color: #bdbdbd;
+        border: 2px solid transparent;
+        height: 85vh;
+        width: 97%;
+        margin: auto;
+        margin-top: 70px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.025em 0.0625em,
+          rgba(0, 0, 0, 0.25) 0px 0.125em 4.5em,
+          rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+      }
+      @media only screen and (max-width: 600px) {
+        #main {
+          width: 100%;
+          height: auto;
         }
-        #container{
-            border: 2px solid transparent;
-            width: 90%;
-            margin: auto;
-            display: flex;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-            margin-top: 7%;
+        #container {
+          width: 100%;
+          flex-direction: column;
+          height: auto;
         }
-        #container>div{
-            flex: 1;
-            width: 20%;
-            height:500px;
-            border: 2px solid transparent;
-            transition: .5s;
-            border: none;
-            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        #container > div {
+          width: 90%;
+          margin: auto;
         }
-        #container>div:hover{
-            flex: 2;
-            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-        }
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        #main{
-            background-color: #bdbdbd;
-            border: 2px solid transparent;
-            height: 85vh;
-            width: 97%;
-            margin: auto;
-            margin-top: 70px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.025em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 4.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-        }
-        @media only screen and (max-width:600px){
-            #main{
-                width: 100%;
-                height: auto;
-            }
-            #container{
-                width: 100%;
-                flex-direction: column;
-                height: auto;
-            }
-            #container>div{
-                width: 90%;
-                margin: auto
-            }
-        }
+      }
+
+      .custom-shape-divider-bottom-1673453236 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1673453236 svg {
+    position: relative;
+    display: block;
+    width: calc(142% + 1.3px);
+    height: 500px;
+}
+
+.custom-shape-divider-bottom-1673453236 .shape-fill {
+    fill: #FFFFFF;
+}
+
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="main">
-        <div id="container">
-            <div>
-                <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
-            </div>
-            <div>
-                <img src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
-            </div>
-            <div>
-                <img src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
-            </div>
-            <div>
-                <img src="https://images.pexels.com/photos/2882234/pexels-photo-2882234.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
-            </div>
-            <div>
-                <img src="https://images.pexels.com/photos/1685111/pexels-photo-1685111.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
-            </div>
-            <div>
-                <img src="https://images.pexels.com/photos/13965642/pexels-photo-13965642.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
-            </div>
+      <div id="container">
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt=""
+          />
         </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/2882234/pexels-photo-2882234.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1685111/pexels-photo-1685111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/13965642/pexels-photo-13965642.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
-   
-</body>
+
+  </body>
 </html>

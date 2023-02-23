@@ -1,0 +1,91 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "newssdfsfs",
+      "content": "fake fake",
+      "author": "sai kiranfsfsfsfsfsfsf",
+      "userid": 1
+    },
+    {
+      "id": 2,
+      "title": "my edit 2 blog",
+      "content": "this content is all about to get something to do work about that . and we need to update the progeress  and do more in this blog ",
+      "author": "sai kiran edited blog"
+    },
+    {
+      "id": 3,
+      "title": "news",
+      "content": "this content is all about to get something to do work about that . and we need to update the progeress  and do more in this blog ",
+      "author": "sai kiran"
+    },
+    {
+      "id": 4,
+      "title": "news",
+      "content": "this content is all about to get something to do work about that . and we need to update the progeress  and do more in this blog ",
+      "author": "sai kiran"
+    },
+    {
+      "id": 5,
+      "title": "news",
+      "content": "this content is all about to get something to do work about that . and we need to update the progeress  and do more in this blog ",
+      "author": "sai kiran"
+    },
+    {
+      "id": 6,
+      "title": "news",
+      "content": "this content is all about to get something to do work about that . and we need to update the progeress  and do more in this blog ",
+      "author": "sai kiran"
+    },
+    {
+      "id": 7,
+      "title": "news",
+      "content": "this content is all about to get something to do work about that . and we need to update the progeress  and do more in this blog ",
+      "author": "sai kiran"
+    },
+    {
+      "id": 8,
+      "title": "news",
+      "content": "this content is all about to get something to do work about that . and we need to update the progeress  and do more in this blog ",
+      "author": "sai kiran"
+    },
+    {
+      "id": 9,
+      "title": "news",
+      "content": "this content is all about to get something to do work about that . and we need to update the progeress  and do more in this blog ",
+      "author": "sai kiran"
+    },
+    {
+      "id": 10,
+      "title": "news",
+      "content": "this content is all about to get something to do work about that . and we need to update the progeress  and do more in this blog ",
+      "author": "sai kiran"
+    },
+    {
+      "title": "new blog",
+      "content": "sdfsfsfsfsfsf",
+      "author": "siree",
+      "id": 11
+    },
+    {
+      "title": "rajeswari",
+      "content": "rejeswari",
+      "author": "rajeswari",
+      "id": 14
+    },
+    {
+      "title": "sathayarana",
+      "content": "sathayarana",
+      "author": "sathayarana",
+      "id": 15
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "sai.kiran@gmail.com",
+      "password": "sai.kiran@gmail.com",
+      "username": "saikiran"
+    }
+  ]
+}
