@@ -1,0 +1,42 @@
+input{
+    padding: 13px 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+button{
+    padding: 12px 40px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+.container{
+    border: 2px solid transparent;
+    height: auto;
+    width: 40%;
+    margin: auto;
+
+}
+.divs{
+    background-color:gray;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.btn1{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    float: right;
+   
+}
+.btn2{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-left: 130px;
+
+   
+}
